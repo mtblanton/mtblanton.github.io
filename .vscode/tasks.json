@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "Sass Compile",
+            "command": "node-sass ./Stylesheets/index.sass ./Stylesheets/index.css",
+            "type": "shell",
+            "group": "build"
+        }
+    ]
+}
