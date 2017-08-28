@@ -5,7 +5,8 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Taylor Blanton">
-    <script defer src="./Scripts/packs/brands.js"></script>
+    <script defer src="./Scripts/packs/brands.min.js"></script>
+    <script defer src="./Scripts/packs/solid.min.js"></script>
     <script defer src="./Scripts/fontawesome.js"></script>
     <link rel="stylesheet" type="text/css" href="./Stylesheets/index.css"></link>
   </head>
@@ -20,23 +21,47 @@
 <div class="wrapper">
 
   <div class="centered-container">
-    <h1><a>Taylor Blanton</a></h1>
-    <h2>Software Developer</h2>
+    <section class="main__profile-card">
+      <div class="profile-card__portrait">
+        <img src="./images/profilepic.jpg" alt="Taylor Blanton - Software Developer" class="main__profile-pic" title>
+      </div>
+      <div class="profile-card__details">
+        <h1>Taylor Blanton</h1>
+        <h2>Software Developer</h2>
+      </div>
+    </section>
+
     
-    <div id="content">
+    <div class="main__content" id="content">
       Hi! I'm a software developer living in Little Rock, AR. I'm currently working as a full-stack developer using the ASP.NET MVC framework. While this mostly involves work with C# and JavaScript, I'm also familiar with Java, C++ and Python.
     </div>
-    <ul class="social-media-list">
-      <li class="social-media-link"><a>
-        <div class="social-media-icon"><i class="fab fa-linkedin min-w1 w-auto social-media-icon"></i></div>
-       LinkedIn
-      </a></li>
-      <li class="social-media-link"><div>
-        <div class="social-media-icon"><i class="fab fa-github min-w1 w-auto"></i></div>
-        GitHub
-      </li></a>
-    </div>
+
+    <ul class="main__social-media-list">
+
+      <li class="main__social-media-link">
+        <a href="mailto:matthewtblanton@gmail.com" rel="nofollow" target="_blank" title="Send me an email">
+          <div class="main__social-media-icon"><i class="fas fa-envelope min-w1 w-auto"></i></div>
+          Email
+        </a>
+      </li>
+
+      <li class="main__social-media-link"><a href="https://www.linkedin.com/in/taylor-blanton-ab9bbb67/" rel="nofollow" target="_blank" title="Connect with me on LinkedIn">
+        <div class="main__social-media-icon">
+          <i class="fab fa-linkedin min-w1 w-auto social-media-icon"></i>
+        </div>
+        LinkedIn
+        </a>
+      </li>
+
+      <li class="main__social-media-link">
+        <a href="https://github.com/mtblanton" rel="nofollow" target="_blank" title="Check out my GitHub">
+          <div class="main__social-media-icon">
+            <i class="fab fa-github min-w1 w-auto"></i>
+          </div>
+          GitHub
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
   </body>
 </html>

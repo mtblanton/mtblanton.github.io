@@ -3,10 +3,27 @@ body {
   color: #555;
   line-height: 1.4em; }
 
+a {
+  text-decoration: none;
+  transition: color 0.15s linear; }
+
 .centered-container {
   width: 75%; }
 
-#content {
+.main__profile-card {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e7ebee; }
+
+.main__profile-pic {
+  width: 8rem;
+  border-radius: 8rem;
+  display: block;
+  margin-right: 2rem; }
+
+.main__content {
   line-height: 2.5em; }
 
 .wrapper {
@@ -15,20 +32,24 @@ body {
   align-content: center;
   justify-content: center; }
 
-.social-media-list {
+.main__social-media-list {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 0 0 0 0;
   font-size: 1.2rem; }
 
-.social-media-link {
+.main__social-media-link {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   list-style-type: none;
   padding: 3px 5px;
   border-radius: 2px; }
+  .main__social-media-link a {
+    color: #555; }
+  .main__social-media-link a:hover {
+    color: #0079ff; }
 
-.social-media-icon {
+.main__social-media-icon {
   margin-right: .1rem;
   font-size: 1.4rem;
   display: inline-block; }
