@@ -5,6 +5,7 @@ const slideout = new Slideout({
     'tolerance': 70
 });
 
-document.querySelector('.menu__open-menu').addEventListener('click', function () {
+document.querySelector('.menu__buttons').addEventListener('click', function () {
     slideout.toggle();
+    this.classList.toggle('menu__buttons-opened');
 });

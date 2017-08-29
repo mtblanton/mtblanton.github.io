@@ -14,17 +14,31 @@ a {
   text-decoration: none;
   transition: color 0.15s linear; }
 
-.menu__open-menu {
-  border: none;
-  outline: none;
-  background: transparent;
+.menu__buttons {
   font-size: 2.5rem;
   z-index: 2;
   position: absolute;
   display: block;
   top: 2rem;
   left: 2rem;
+  transition: left ease 300ms; }
+
+.menu__buttons.menu__buttons-opened {
+  left: calc(2rem + 256px); }
+  .menu__buttons.menu__buttons-opened .menu__open-menu {
+    display: none !important; }
+  .menu__buttons.menu__buttons-opened .menu__close-menu {
+    display: block !important; }
+
+.menu__button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2.5rem;
   cursor: pointer; }
+
+.menu__close-menu {
+  display: none; }
 
 .navbar__button {
   background-color: transparent;
