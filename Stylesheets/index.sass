@@ -1,6 +1,6 @@
 html
-    height: 98%;
-    width: calc(100% - 8px);
+    height: 100%;
+    width: 100%;
     font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #555;
 
@@ -8,6 +8,7 @@ body
     line-height: 1.4em;
     height: 100%;
     width: 100%;
+    margin: 0;
 
 a 
     text-decoration: none;
@@ -15,6 +16,7 @@ a
 
 .menu__open-menu
     border: none;
+    outline: none;
     background: transparent;
     font-size: 2.5rem;
     z-index: 2;
@@ -22,6 +24,7 @@ a
     display: block;
     top: 2rem;
     left: 2rem;
+    cursor: pointer;
 
 .navbar__button
     background-color: transparent;
@@ -85,7 +88,7 @@ a
         color: #555;
 
     a:hover
-        color: #0079ff;
+        color: #1565c0;
 
 .main__social-media-icon
     margin-right: .1rem;
@@ -98,7 +101,6 @@ a
   bottom: 0;
   width: 256px;
   min-height: 100vh;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
@@ -125,3 +127,4 @@ a
 
 .slideout-open .slideout-menu
   display: block;
+  background: #212121;
