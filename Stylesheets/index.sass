@@ -1,3 +1,7 @@
+
+$widthToChangeAt: 700px;
+$navbarWidth: 256px;
+
 html
     height: 100%;
     width: 100%;
@@ -23,7 +27,6 @@ a
     left: 2rem;
     transition: left ease 300ms;
 
-$navbarWidth: 256px;
 .menu__buttons.menu__buttons-opened
     left: calc(2rem + #{$navbarWidth});
 
@@ -51,8 +54,11 @@ $navbarWidth: 256px;
     text-transform: uppercase;
 
 .centered-container 
-    width: 75%;
-    max-width: 50rem;
+    width: 35rem;
+
+@media (max-width: #{$widthToChangeAt})
+    .centered-container
+        width: 80%;
 
 .main__profile-card
     display: flex;
@@ -92,25 +98,31 @@ $navbarWidth: 256px;
 .main__social-media-list
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding: 0 0 0 0;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 
 .main__social-media-link
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     list-style-type: none;
-    padding: 3px 5px;
     border-radius: 2px;
+    flex: 0 0 33%;
 
     a
         color: #555;
+        display: flex;
+        align-items: center;
 
     a:hover
         color: #1565c0;
 
+@media (max-width: #{$widthToChangeAt})
+    .main__social-media-link
+        flex: 0 0 50%;
+
 .main__social-media-icon
-    margin-right: .1rem;
-    font-size: 1.4rem;
+    margin-right: .1em;
+    font-size: 1.4em;
     display: inline-block;
 
 .slideout-menu 
