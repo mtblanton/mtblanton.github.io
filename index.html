@@ -8,17 +8,20 @@
     <script defer src="./Scripts/packs/brands.min.js"></script>
     <script defer src="./Scripts/packs/solid.min.js"></script>
     <script defer src="./Scripts/fontawesome.js"></script>
+    <script src="./Scripts/slideout.js"></script>
     <link rel="stylesheet" type="text/css" href="./Stylesheets/index.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merriweather" rel="stylesheet">
   </head>
 <body>
   
-  <nav id="site-navigation">
-    <ul class="nav-links">
-      <li><a>Résumé</a></li>
-      <li><a>Portfolio</a></li>
-    </ul>
+  <button class="menu__open-menu" title="Open the navbar">
+    <i class="fas fa-bars min-w1 w-auto"></i>
+  </button>
+
+  <nav id="menu" class="main__navbar" id="site-navigation">
+      <button class="navbar__button" title="View my résumé"><a href="/resume">Résumé</a></button>
   </nav>
-<div class="wrapper">
+<div id="panel" class="main__wrapper">
 
   <div class="centered-container">
     <section class="main__profile-card">
@@ -65,3 +68,6 @@
   </div>
   </body>
 </html>
+
+
+<script src="./Scripts/index.js"></script>

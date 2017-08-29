@@ -1,14 +1,37 @@
-body
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+html
+    height: 98%;
+    width: calc(100% - 8px);
+    font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #555;
+
+body
     line-height: 1.4em;
+    height: 100%;
+    width: 100%;
 
 a 
     text-decoration: none;
     transition: color 0.15s linear;
 
+.menu__open-menu
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: 2rem;
+    left: 2rem;
+
+.navbar__button
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+
 .centered-container 
     width: 75%;
+    max-width: 50rem;
 
 .main__profile-card
     display: flex;
@@ -38,10 +61,11 @@ a
 .main__content 
     line-height: 2.5em;
     
-.wrapper
+.main__wrapper
+    height: 100%;
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 
 .main__social-media-list
@@ -68,3 +92,36 @@ a
     font-size: 1.4rem;
     display: inline-block;
 
+.slideout-menu 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+
+
+.slideout-menu-left 
+  left: 0;
+
+
+.slideout-menu-right 
+  right: 0;
+
+
+.slideout-panel 
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+
+
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel 
+  overflow: hidden;
+
+
+.slideout-open .slideout-menu
+  display: block;
