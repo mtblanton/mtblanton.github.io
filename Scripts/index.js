@@ -6,6 +6,6 @@ const slideout = new Slideout({
 });
 
 document.querySelector('.menu__buttons').addEventListener('click', function () {
-    slideout.toggle();
     this.classList.toggle('menu__buttons-opened');
+    slideout.toggle();
 });
