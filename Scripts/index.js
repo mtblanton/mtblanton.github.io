@@ -16,6 +16,6 @@ slideout.on('beforeclose', function () {
 });
 
 menuButtons.addEventListener('click', function () {
-    this.classList.toggle('menu__buttons-opened');
+    menuButtons.classList.toggle('menu__buttons-opened');
     slideout.toggle();
 });
