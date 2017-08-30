@@ -4,13 +4,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Sass Compile",
-            "command": "node-sass ./Stylesheets/index.sass ./Stylesheets/index.css",
+            "taskName": "Sass Watch",
+            "command": "node-sass --watch ./Stylesheets/index.sass ./Stylesheets/index.css",
             "type": "shell",
             "group": "build",
             "problemMatcher": [
                 "$node-sass"
             ]
+        },
+        {
+            "taskName": "AutoPrefixer Build",
+            "command": "postcss ./Stylesheets/index.css --use autoprefixer -o ./Stylesheets/index.css",
+            "type": "shell",
+            "group": "build"
         }
     ]
 }
