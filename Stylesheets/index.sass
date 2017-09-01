@@ -47,12 +47,19 @@ a
 .menu__close-menu
     display: none;
 
+.main__navbar
+    display: flex;
+    font-size: 1.5rem;
 
-.navbar__button
-    background-color: transparent;
-    outline: 0;
-    border: 0;
-    text-transform: uppercase;
+.navbar__list
+    text-decoration: none;
+    list-style-type: none;
+
+.navbar__item
+    text-decoration: none;
+
+.navbar__link
+    color: white;
 
 .centered-container 
     width: 35rem;
@@ -138,8 +145,8 @@ a
         display: flex;
         align-items: center;
 
-    a:hover
-        color: #1565c0;
+a:hover
+    color: #1565c0;
 
 @media (max-width: #{$widthToChangeAt})
     .main__social-media-link
