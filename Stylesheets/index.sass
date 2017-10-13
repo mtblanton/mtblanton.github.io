@@ -7,10 +7,14 @@ html
     width: 100%;
     font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #555;
+    box-sizing: border-box;
 
 @media (max-width: #{$widthToChangeAt})
     html
         font-size: 80%;
+
+*, *:before, *:after
+    box-sizing: inherit;
 
 body
     line-height: 1.4em;
@@ -20,7 +24,6 @@ body
 
 a 
     text-decoration: none;
-    transition: color 0.15s linear;
 
 .menu__buttons
     font-size: 2.5rem;
@@ -54,12 +57,21 @@ a
 .navbar__list
     text-decoration: none;
     list-style-type: none;
+    padding: 0;
 
 .navbar__item
-    text-decoration: none;
+    height: 3rem;
+    transition: background-color 0.15s linear;
+
+.navbar__item:hover
+    background-color: #555;
 
 .navbar__link
     color: white;
+    display: block;
+    line-height: 3rem;
+    padding-left: 2rem;
+
 
 .centered-container 
     width: 35rem;
@@ -145,8 +157,9 @@ a
         display: flex;
         align-items: center;
 
-a:hover
-    color: #1565c0;
+    a:hover
+        color: #1565c0;
+        transition: color 0.15s linear;
 
 @media (max-width: #{$widthToChangeAt})
     .main__social-media-link
