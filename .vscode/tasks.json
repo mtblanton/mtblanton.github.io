@@ -17,6 +17,15 @@
             "command": "postcss ./Stylesheets/index.css --use autoprefixer -o ./Stylesheets/index.css",
             "type": "shell",
             "group": "build"
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
