@@ -5,16 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Taylor Blanton" />
-    <script
-      src="https://kit.fontawesome.com/78b825524d.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./Stylesheets/index.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:700"
+      href="https://fonts.googleapis.com/css?family=Lato:700&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -22,12 +18,18 @@
       <div class="centered-container">
         <section class="main__profile-card">
           <div class="profile-card__portrait">
-            <img
-              src="./images/profilepic.jpg"
-              alt="Taylor Blanton - Software Developer"
-              class="profile-card__profile-pic"
-              title
-            />
+            <picture>
+              <source
+                srcset="./images/profilepic-128.jpg"
+                media="(min-width: 700px)"
+              />
+              <img
+                src="./images/profilepic-90.jpg"
+                alt="Taylor Blanton - Software Developer"
+                class="profile-card__profile-pic"
+                title
+              />
+            </picture>
           </div>
           <div class="profile-card__details">
             <h1 class="profile-card__name">Taylor Blanton</h1>
@@ -38,8 +40,8 @@
         <div class="main__content" id="content">
           Hi! I'm a software developer living in Rogers, AR. I'm currently
           working as a full-stack developer and team lead at Walmart Labs. While
-          this mostly involves work with Java, React, and Cordova, I'm also familiar with
-          C#!
+          this mostly involves work with Java, React, and Cordova, I'm also
+          familiar with C#!
         </div>
 
         <ul class="main__social-media-list">
@@ -47,7 +49,7 @@
             <a href="TaylorBlantonResume.pdf" class="navbar__link" download>
               Résumé
               <span class="main__social-media-icon">
-                <i class="fas fa-file"></i>
+                <i class="fas fa-file fa-lg"></i>
               </span>
             </a>
           </li>
@@ -60,7 +62,7 @@
             >
               Email
               <span class="main__social-media-icon">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope fa-lg"></i>
               </span>
             </a>
           </li>
@@ -74,7 +76,7 @@
             >
               LinkedIn
               <div class="main__social-media-icon">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin fa-lg"></i>
               </div>
             </a>
           </li>
@@ -88,7 +90,7 @@
             >
               GitHub
               <div class="main__social-media-icon">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github fa-lg"></i>
               </div>
             </a>
           </li>
@@ -96,4 +98,10 @@
       </div>
     </div>
   </body>
+
+  <script
+    defer
+    src="https://kit.fontawesome.com/78b825524d.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
