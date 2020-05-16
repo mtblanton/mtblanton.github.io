@@ -12,7 +12,7 @@
     },
     {
       "label": "AutoPrefixer Build",
-      "command": "postcss ./Stylesheets/index.css --use autoprefixer -o ./Stylesheets/index.css",
+      "command": "postcss ./Stylesheets/index.css --use autoprefixer -b 'last 5 versions'  -o ./Stylesheets/index.css",
       "type": "shell",
       "group": "build"
     }
