@@ -45,28 +45,6 @@ a {
 .menu__close-menu {
   display: none; }
 
-.main__navbar {
-  display: flex;
-  font-size: 1.5rem; }
-
-.navbar__list {
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0; }
-
-.navbar__item {
-  height: 3rem;
-  transition: background-color 0.15s linear; }
-
-.navbar__item:hover {
-  background-color: #555; }
-
-.navbar__link {
-  color: white;
-  display: block;
-  line-height: 3rem;
-  padding-left: 2rem; }
-
 .centered-container {
   width: 35rem; }
 
@@ -152,36 +130,7 @@ a {
     flex: 0 0 50%; } }
 
 .main__social-media-icon {
-  margin-right: .1em;
+  margin-left: 0.1em;
+  margin-left: 0.5ch;
   font-size: 1.4em;
   display: inline-block; }
-
-.slideout-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 256px;
-  min-height: 100vh;
-  -webkit-overflow-scrolling: touch;
-  z-index: 0;
-  display: none; }
-
-.slideout-menu-left {
-  left: 0; }
-
-.slideout-menu-right {
-  right: 0; }
-
-.slideout-panel {
-  position: relative;
-  z-index: 1;
-  will-change: transform;
-  background-color: #FFF;
-  /* A background-color is required */ }
-
-.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
-  overflow: hidden; }
-
-.slideout-open .slideout-menu {
-  display: block;
-  background: #212121; }

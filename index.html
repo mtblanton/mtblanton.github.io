@@ -1,83 +1,100 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Taylor Blanton">
-    <script defer src="./Scripts/packs/brands.min.js"></script>
-    <script defer src="./Scripts/packs/solid.min.js"></script>
-    <script defer src="./Scripts/fontawesome.js"></script>
-    <script src="./Scripts/slideout.js"></script>
-    <link rel="stylesheet" type="text/css" href="./Stylesheets/index.css"></link>
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merriweather" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Taylor Blanton" />
+    <script
+      src="https://kit.fontawesome.com/78b825524d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./Stylesheets/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:700"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-<body>
-  
 
-
-  <nav id="menu" class="main__navbar" id="site-navigation">
-    <ul class="navbar__list">
-      <li class="navbar__item" title="Download my résumé"><a href="TaylorBlantonResume.pdf" class="navbar__link" download>Résumé</a></li>
-    </ul>
-  </nav>
-<div id="panel" class="main__wrapper">
-  
-  <div class="menu__buttons">
-    <button class="menu__button menu__open-menu" title="Open the navbar">
-      <i class="fas fa-bars min-w1 w-auto"></i>
-    </button>
-    <button class="menu__button menu__close-menu" title="Close the navbar">
-      <i class="fas fa-chevron-left min-w1 w-auto"></i>
-    </button>
-  </div>
-
-  <div class="centered-container">
-    <section class="main__profile-card">
-      <div class="profile-card__portrait">
-        <img src="./images/profilepic.jpg" alt="Taylor Blanton - Software Developer" class="profile-card__profile-pic" title>
-      </div>
-      <div class="profile-card__details">
-        <h1 class="profile-card__name">Taylor Blanton</h1>
-        <h2 class="profile-card__subtitle">Software Developer</h2>
-      </div>
-    </section>
-
-    
-    <div class="main__content" id="content">
-      Hi! I'm a software developer living in Little Rock, AR. I'm currently working as a full-stack developer using the ASP.NET MVC framework. While this mostly involves work with C# and JavaScript, I'm also familiar with Java, C++ and Python.
-    </div>
-
-    <ul class="main__social-media-list">
-
-      <li class="main__social-media-link">
-        <a href="mailto:matthewtblanton@gmail.com" rel="nofollow noopener" target="_blank" title="Send me an email">
-          <div class="main__social-media-icon"><i class="fas fa-envelope min-w1 w-auto"></i></div>
-          Email
-        </a>
-      </li>
-
-      <li class="main__social-media-link"><a href="https://www.linkedin.com/in/taylor-blanton-ab9bbb67/" rel="nofollow noopener" target="_blank" title="Connect with me on LinkedIn">
-        <div class="main__social-media-icon">
-          <i class="fab fa-linkedin min-w1 w-auto social-media-icon"></i>
-        </div>
-        LinkedIn
-        </a>
-      </li>
-
-      <li class="main__social-media-link">
-        <a href="https://github.com/mtblanton" rel="nofollow noopener" target="_blank" title="Check out my GitHub">
-          <div class="main__social-media-icon">
-            <i class="fab fa-github min-w1 w-auto"></i>
+  <body>
+    <div id="panel" class="main__wrapper">
+      <div class="centered-container">
+        <section class="main__profile-card">
+          <div class="profile-card__portrait">
+            <img
+              src="./images/profilepic.jpg"
+              alt="Taylor Blanton - Software Developer"
+              class="profile-card__profile-pic"
+              title
+            />
           </div>
-          GitHub
-        </a>
-      </li>
-    </ul>
-  </div>
+          <div class="profile-card__details">
+            <h1 class="profile-card__name">Taylor Blanton</h1>
+            <h2 class="profile-card__subtitle">Software Developer</h2>
+          </div>
+        </section>
+
+        <div class="main__content" id="content">
+          Hi! I'm a software developer living in Rogers, AR. I'm currently
+          working as a full-stack developer and team lead at Walmart Labs. While
+          this mostly involves work with Java, React, and Cordova, I'm also familiar with
+          C#!
+        </div>
+
+        <ul class="main__social-media-list">
+          <li class="main__social-media-link">
+            <a href="TaylorBlantonResume.pdf" class="navbar__link" download>
+              Résumé
+              <span class="main__social-media-icon">
+                <i class="fas fa-file"></i>
+              </span>
+            </a>
+          </li>
+          <li class="main__social-media-link">
+            <a
+              href="mailto:matthewtblanton@gmail.com"
+              rel="nofollow noopener"
+              target="_blank"
+              title="Send me an email"
+            >
+              Email
+              <span class="main__social-media-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="main__social-media-link">
+            <a
+              href="https://www.linkedin.com/in/taylor-blanton-ab9bbb67/"
+              rel="nofollow noopener"
+              target="_blank"
+              title="Connect with me on LinkedIn"
+            >
+              LinkedIn
+              <div class="main__social-media-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </li>
+
+          <li class="main__social-media-link">
+            <a
+              href="https://github.com/mtblanton"
+              rel="nofollow noopener"
+              target="_blank"
+              title="Check out my GitHub"
+            >
+              GitHub
+              <div class="main__social-media-icon">
+                <i class="fab fa-github"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
-
 
 <script src="./Scripts/index.js"></script>
