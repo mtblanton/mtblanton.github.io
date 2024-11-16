@@ -1,4 +1,7 @@
+$widthToChangeAt: 700px;
+
 :root {
+  // from utopia.fyi
   --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
   --step-1: clamp(1.618rem, 1.4077rem + 1.0513vw, 2.2225rem);
   --step-2: clamp(2.6179rem, 2.154rem + 2.3194vw, 3.9516rem);
@@ -30,6 +33,7 @@ a {
   display: flex;
   align-items: center;
   gap: 2rem;
+
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #e7ebee;
@@ -43,9 +47,11 @@ a {
 
 .profile-card__name {
   font-size: var(--step-2);
+
   letter-spacing: 0.1rem;
   font-weight: 500;
   color: black;
+
   margin: 0;
 }
 
@@ -55,12 +61,13 @@ a {
   margin: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: #{$widthToChangeAt}) {
   .main__profile-card {
     padding-bottom: 0;
     flex-direction: column;
   }
 }
+
 .profile-card__details {
   display: flex;
   flex-direction: column;
@@ -80,6 +87,7 @@ a {
 .main__wrapper {
   height: 100dvh;
   width: 100dvw;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,34 +98,40 @@ a {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
+
   padding: 0;
   font-size: 1.2em;
 }
 
 .main__social-media-link {
   list-style-type: none;
+
   border-radius: 2px;
   flex: 0 0 25%;
   padding-bottom: 1rem;
-}
-.main__social-media-link a {
-  color: #555;
-  display: flex;
-  align-items: center;
-  height: 1.5em;
-}
-.main__social-media-link a:hover {
-  color: #1565c0;
-  transition: color 0.15s linear;
+
+  a {
+    color: #555;
+
+    display: flex;
+    align-items: center;
+
+    height: 1.5em;
+  }
+
+  a:hover {
+    color: #1565c0;
+
+    transition: color 0.15s linear;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: #{$widthToChangeAt}) {
   .main__social-media-link {
     flex: 0 0 50%;
   }
 }
+
 .main__social-media-icon {
   margin-left: 0.5ch;
 }
-
-/*# sourceMappingURL=index.css.map */

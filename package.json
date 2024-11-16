@@ -1,0 +1,17 @@
+{
+  "name": "mtblanton.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sass-watch": "sass --watch ./Stylesheets/index.scss ./Stylesheets/index.css",
+    "dev": "concurrently \"npm:sass-watch\" \"live-server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.81.0"
+  }
+}
